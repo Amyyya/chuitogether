@@ -1,0 +1,114 @@
+$themecolor: #f4f2f2;
+$maincolor: #F78888;
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  background-color: $themecolor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+  div.container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    div.login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 5rem;
+      background-color: white;
+      border: black 1px solid;
+      box-shadow: 10px 10px grey;
+
+      img {
+        flex: 5 1;
+        width: 8vw;
+        height: 8vw;
+      }
+
+      form {
+        flex: 2 1;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        label {
+          margin: 0.25rem 0rem;
+        }
+
+        input {
+          margin: 0.25rem 0rem;
+          padding: 5px 1rem;
+          width: 250px;
+        }
+
+        div.rightbox {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+
+          input {
+            width: 1rem;
+          }
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1rem;
+        }
+      }
+
+      div.link {
+        margin-top: 2rem;
+        a {
+          padding-left: 1.25rem;
+          img {
+            margin-top: 2rem;
+
+            width: 4vw;
+            height: 4vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: #726c6c;
+  font-size: 1rem;
+}
+
+.shape-ex1 {
+  width: 150px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  color: black;
+  background-color: $maincolor;
+  transition: all 0.3s linear;
+}
+
+.shape-ex1:hover {
+  background-color: cadetblue;
+  color: #fff;
+}

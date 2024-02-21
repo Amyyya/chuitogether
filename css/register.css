@@ -1,0 +1,85 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  background-color: #f4f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main div.container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+main div.container div.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 5rem;
+  background-color: white;
+  border: black 1px solid;
+  box-shadow: 10px 10px grey;
+}
+main div.container div.register img {
+  flex: 5 1;
+  width: 8vw;
+  height: 8vw;
+}
+main div.container div.register form {
+  flex: 2 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+main div.container div.register form label {
+  margin: 0.25rem 0rem;
+}
+main div.container div.register form input {
+  margin: 0.25rem 0rem;
+  padding: 5px 1rem;
+  width: 250px;
+}
+main div.container div.register form div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+::-moz-placeholder {
+  color: #726c6c;
+  font-size: 1rem;
+}
+
+::placeholder {
+  color: #726c6c;
+  font-size: 1rem;
+}
+
+.shape-ex1 {
+  width: 150px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
+  color: black;
+  background-color: #F78888;
+  transition: all 0.3s linear;
+}
+
+.shape-ex1:hover {
+  background-color: cadetblue;
+  color: #fff;
+}/*# sourceMappingURL=register.css.map */
